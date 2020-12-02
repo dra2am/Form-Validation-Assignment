@@ -1,0 +1,182 @@
+body {
+  display: grid;
+  justify-items: center;
+  grid-template-areas:
+    "header header"
+    "sidebar info"
+    "footer footer";
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto auto;
+  background-color: rgb(250, 242, 232);
+  font-family: sans-serif;
+}
+
+/* position elements with grid */
+header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+footer {
+  grid-area: footer;
+}
+
+label {
+  margin-left: 40px;
+}
+
+#info {
+  grid-area: info;
+  border: 1px solid black;
+  background-color: antiquewhite;
+  padding: 1em;
+  margin-right: 1em;
+  display: grid;
+  grid-template-areas:
+    "label input icon hint"
+    "label2 input2 icon2 hint2"
+    "label3 input3 icon3 hint3"
+    "label4 input4 icon4 hint4"
+    "label5 input5 icon5 hint5"
+    "q1 q1 . . "
+    "q2 q2 . . "
+    ". submit . .";
+
+  grid-template-columns: 2fr 2fr 1fr 4fr;
+  grid-template-rows: auto auto;
+}
+
+/* position form elements with grid */
+.q1 {
+  grid-area: q1;
+}
+.q2 {
+  grid-area: q2;
+}
+#submit {
+  grid-area: submit;
+  padding: 0.5em;
+  margin-top: 1em;
+  border: 2px solid brown;
+  background-color: rgb(255, 202, 132);
+}
+
+#first {
+  grid-area: label;
+}
+#last {
+  grid-area: label2;
+}
+#mail-label {
+  grid-area: label3;
+}
+#phone-label {
+  grid-area: label4;
+}
+#student-label {
+  grid-area: label5;
+}
+
+input.firstname {
+  grid-area: input;
+}
+#lastname {
+  grid-area: input2;
+}
+#email {
+  grid-area: input3;
+}
+#phone {
+  grid-area: input4;
+}
+#students {
+  grid-area: input5;
+}
+
+i#check,
+i#wrong {
+  grid-area: icon;
+}
+i#check2,
+#wrong2 {
+  grid-area: icon2;
+}
+i#check3,
+#wrong3 {
+  grid-area: icon3;
+}
+i#check4,
+#wrong4 {
+  grid-area: icon4;
+}
+i#check5,
+#wrong5 {
+  grid-area: icon5;
+}
+
+#nameHint {
+  grid-area: hint;
+  margin-top: -0.1em;
+}
+#lastHint {
+  grid-area: hint2;
+  margin-top: -0.1em;
+}
+#emailHint {
+  grid-area: hint3;
+  margin-top: -0.1em;
+}
+#phoneHint {
+  grid-area: hint4;
+  margin-top: -0.1em;
+}
+#studentHint {
+  grid-area: hint5;
+  margin-top: -0.1em;
+}
+
+/* style icons */
+i#wrong,
+#wrong2,
+#wrong3,
+#wrong4,
+#wrong5 {
+  font-size: 18px;
+  color: red;
+}
+#check,
+#check2,
+#check3,
+#check4,
+#check5 {
+  font-size: 18px;
+  color: rgb(79, 197, 56);
+  width: 2em;
+}
+
+/* style labels */
+#first,
+#last,
+#mail-label,
+#student-label,
+#phone-label {
+  margin-right: 0.8em;
+  display: inline;
+}
+
+/* style inputs */
+input.firstname,
+#lastname,
+#email,
+#phone,
+#students {
+  margin-bottom: 1em;
+  margin-right: 1em;
+  width: 15em;
+  height: 1.5em;
+}

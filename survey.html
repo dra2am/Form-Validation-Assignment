@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a3bb61a8e2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/process_form.js"></script>
+    <title>Survey – Diana Alcantara</title>
+</head>
+<body>
+    <header>
+        <h1>Movie Type Survey</h1>
+    </header>
+    <section class="sidebar">
+        <h2>About the Survey</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, voluptatem ea dolores impedit neque maiores cum earum error voluptates at consectetur facere est quasi harum tenetur, veritatis fugit ab? Iusto.
+        </p>
+    </section>
+    <form id="info">
+        <!-- first name -->
+        <label id="first" class="firstname" for="firstname">First Name</label>
+        <input class="firstname" id="firstname">
+        <!-- last name -->
+        <label id="last" for="lastname">Last Name</label>
+        <input id="lastname">
+        <!-- email -->
+        <label id="mail-label" for="email">Email Address</label>
+        <input id="email">
+        <!-- phone -->
+        <label id="phone-label" for="phone">Phone Number</label>
+        <input id="phone">
+        <!-- student -->
+        <label id="student-label" for="students">Students Address</label>
+        <input id="students">
+        <!-- survey -->
+        <div class="q1">
+            <p>What genre do you prefer?:</p> 
+            <label for="action">Action</label>  
+            <input type="radio" name="genre" id="action" value="action">
+            <label for="horror">Horror</label>      
+            <input type="radio" name="genre" id="horror" value="horror"> 
+        </div>
+        <div class="q2">
+            <p>What style of movie do you like?:</p> 
+            <label for="animated">Animated</label>  
+            <input type="radio" name="style" id="animated" value="animated">
+            <label for="live">Live Action</label>
+            <input type="radio" name="style" id="live" value="live"> 
+        </div>
+        <input id="submit" type="submit" value="Submit Answers">
+    </form>
+    <footer>
+        <h3>Created by Diana Alcantara</h3>
+    </footer>
+    
+</body>
+</html>
